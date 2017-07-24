@@ -6,6 +6,10 @@ var app = express();
 var logger = require("morgan");
 var bodyParser = require("body-parser");
 var hbs = require('hbs');
+const methodOverride = require('method-override');
+
+var port = process.env.PORT || 3000;
+
 
 
 //===========================
@@ -21,6 +25,8 @@ app.set("view engine", "hbs");
 app.set('views', './views');
 
 app.use(express.static(__dirname + '/public')); // VERY IMPORTANT!! Make sure to add a '/'
+
+app.use(methodOverride('_method'));
 
 
 //===========================
@@ -39,6 +45,6 @@ app.get('/', (req, res) => {
 //===========================
 // LISTENERS
 //===========================
-app.listen(3000, function(req, res){
+app.listen(port, function(req, res){
 	console.log("listening");
 });

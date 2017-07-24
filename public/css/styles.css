@@ -1,0 +1,25 @@
+body {
+    background-image: url('https://s-media-cache-ak0.pinimg.com/736x/97/7c/80/977c802c5ac7818f7253d9d84f011dab--ghost-ship-sailing-ships.jpg');
+    background-size: cover;
+    color: rgba(150,0,0,1);
+    text-shadow: 2px 2px rgba(0,0,0,0.7);
+}
+
+ul {
+    border-left: 2px solid rgba(150,0,0,1);
+    border-right: 2px solid rgba(150,0,0,1);
+    border-radius: 25px;
+    width: 300px;
+    background-color: rgba(0,0,0,0.7);
+}
+
+a {
+    color: rgba(225,225,225,0.7); 
+}
+
+ul:hover,
+a:hover {
+    background-color: rgba(0,0,0,0.9);
+    color: rgba(225,225,225,0.9); 
+
+}
